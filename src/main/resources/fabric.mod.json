@@ -10,7 +10,7 @@
   "contact": {
     "repo": "https://github.com/Eonexe/additions"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/additions/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
