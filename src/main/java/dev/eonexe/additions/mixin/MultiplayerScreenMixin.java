@@ -44,9 +44,10 @@ public class MultiplayerScreenMixin extends Screen {
     @Inject(method = "render", at = @At("TAIL"))
     private void onRender(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
 
-        //join timer
-        context.drawCenteredTextWithShadow(mc.textRenderer, joinTimer, this.width / 2, 3, textColor);
-
+        if (chunkDupeTimer.isActive()) {
+            //join timer
+            context.drawCenteredTextWithShadow(mc.textRenderer, joinTimer, this.width / 2, 3, textColor);
+        }
     }
 
     @Inject(method = "tick", at = @At("TAIL"))
