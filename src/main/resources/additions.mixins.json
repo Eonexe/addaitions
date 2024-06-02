@@ -3,7 +3,6 @@
   "package": "dev.eonexe.additions.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "ExampleMixin",
     "MultiplayerScreenMixin"
   ],
   "injectors": {
