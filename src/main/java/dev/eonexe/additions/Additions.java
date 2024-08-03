@@ -4,6 +4,7 @@ import dev.eonexe.additions.commands.CommandExample;
 import dev.eonexe.additions.hud.HudExample;
 import dev.eonexe.additions.modules.ChunkDupeTimer;
 import com.mojang.logging.LogUtils;
+import dev.eonexe.additions.modules.combat.Clip;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
@@ -27,7 +28,8 @@ public class Additions extends MeteorAddon {
         Hud hud = Hud.get();
 
         // Modules
-        register.add(new ChunkDupeTimer());
+        //register.add(new ChunkDupeTimer());
+        register.add(new Clip());
 
         // Commands
         Commands.add(new CommandExample());

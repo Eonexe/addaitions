@@ -22,4 +22,5 @@ public class ChunkDupeTimer extends Module {
     public ChunkDupeTimer() {
         super(Additions.CATEGORY, "chunk-dupe-timer", "Timer in the multiplayer screen to tell you when to relog.");
     }
+
 }
